@@ -63,5 +63,5 @@ if ( defined( 'WP_SERVER_ENVIRONMENT' ) && WP_SERVER_ENVIRONMENT == 'development
 		$_localdev->disable( 'vaultpress.php' );
 	*/
 } elseif ( defined( 'WP_SERVER_ENVIRONMENT' ) && WP_SERVER_ENVIRONMENT == 'live' ) {
-	new CWS_Disable_Plugins_When_Local_Dev( array( 'wp-log-in-browser/wp-log-in-browser.php' ) );
+	//new CWS_Disable_Plugins_When_Local_Dev( array( 'wp-log-in-browser/wp-log-in-browser.php' ) );
 }
