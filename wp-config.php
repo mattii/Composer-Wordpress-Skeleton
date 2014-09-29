@@ -19,10 +19,17 @@ if( stristr( $_SERVER['SERVER_NAME'], "dev" ) ) {
 define( 'WP_SERVER_ENVIRONMENT', $wp_env );
 
 // =================================================
+// Define HOME and SITEURL
+// =================================================
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/site/core');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '/');
+
+
+// =================================================
 // Custom Content Directory (change if renamed)
 // =================================================
-define('WP_CONTENT_URL', 'http://'.$_SERVER['SERVER_NAME'].'/site');
-define('WP_CONTENT_DIR', __DIR__.'/site');
+define('WP_CONTENT_URL', 'http://'.$_SERVER['SERVER_NAME'].'/site/content');
+define('WP_CONTENT_DIR', __DIR__.'/content');
 define('WP_ROOT', __DIR__."/core");
 
 // ================================================

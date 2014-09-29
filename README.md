@@ -1,16 +1,18 @@
 # Composer WordPress Skeleton
 
-This is simply a skeleton repo for a WordPress site, forked from [ADARTA](https://github.com/ADARTA/Composer-Wordpress-Skeleton/) and modified to my needs. Read the original README and use with caution.
+This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](https://github.com/moritzjacobs/Composer-Wordpress-Skeleton) and modified to my needs. Read the original README and use with caution.
 
 ## Short guide:
-1. Clone this git into `htdocs`:  
-`git clone git@github.com:moritzjacobs/Composer-Wordpress-Skeleton.git my-server-root`
+1. Clone this git into your webroot in a folder called `site`:  
+`git clone git@github.com:mattii/Composer-Wordpress-Skeleton.git site`
 2. Edit `wp-config-local-sample.php` and enter valid db credentials, then rename to `wp-config-local.php`
-3. Change the Wordpress table prefix in `wp-config.php` (line 52)
+3. Change the Wordpress table prefix in `wp-config.php` (line 59)
 4. `composer install`
-5. Surf to `http://mycrazyhostname.dev/admin`
-6. Follow install process
-7. Update Wordpress via the Dashboard (why you need to do this, I have *no* idea...)
+5. Copy `index.php` and `.htaccess` from folder `site` to your webroot
+6. Change line 4 in this new `index.php` from `require( './core/wp-blog-header.php' );` to `require( './site/core/wp-blog-header.php' );`
+7. Surf to `http://mycrazyhostname.dev/admin`
+8. Follow install process
+9. Update Wordpress via the Dashboard (why you need to do this, I have *no* idea...)
 
 
 ### Differences to ADARTA's version:

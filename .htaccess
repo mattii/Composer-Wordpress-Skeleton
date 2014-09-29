@@ -1,6 +1,6 @@
 # Redirect /admin and /login
-RewriteRule ^admin/?$ /core/wp-login.php?redirect_to=/core/wp-admin/ [R,L]
-RewriteRule ^login/?$ /core/wp-login.php [R,L]
+RewriteRule ^admin/?$ /site/core/wp-login.php?redirect_to=/site/core/wp-admin/ [R,L]
+RewriteRule ^login/?$ /site/core/wp-login.php [R,L]
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
