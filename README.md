@@ -14,6 +14,22 @@ This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](
 8. Follow install process
 9. Update Wordpress via the Dashboard (why you need to do this, I have *no* idea...)
 
+## Project structure:
+* index.php
+* .htaccess
+* site
+    - content
+        + mu-plugins
+        + plugins
+        + themes
+        + uploads
+        + …
+    - core (Wordpress)
+    - wp-config.php
+    - …
+
+
+
 
 ### Differences to ADARTA's version:
 
