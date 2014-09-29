@@ -3,4 +3,5 @@
 # Except these files
 !.gitignore
 !register-theme-directory.php
+!disable-plugins-on-dev.php
 !/plugin-bootstrap.php
