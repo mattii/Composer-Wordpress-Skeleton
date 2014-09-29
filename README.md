@@ -31,11 +31,8 @@ This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](
 
 
 
-### Differences to ADARTA's version:
+### Differences to moritzjacobs's version:
 
-* Removed roots
-* Renamed `wp-content/` to `site/` and `wp/` to `core/`
-* Removed `web.config`
-* `wp-config-*.php` support with auto-switching by host name (`local | staging | live`)
-* Plugin activation is handled by `mu-plugins/plugin-bootstrap.php`; Plugins are inactive if their root folder/file name starts with an underscore
-* Read .gitignore to get an idea about what we're trying to accomplish with git and composer here
+* Renamed `site/` to `content/`
+* Changed value of constant `WP_SERVER_ENVIRONMENT` from `local` to `development`. Possible environments:(`development | staging | live`)
+* Added mu-plugin `CWS_Disable_Plugins_When_Local_Dev` by [Mark Jaquith](https://github.com/markjaquith) to disable certain plugins in certain environments
