@@ -1,3 +1,3 @@
 <?php
 
-register_theme_directory( ABSPATH . 'site/themes/' );
+register_theme_directory( ABSPATH . 'content/themes/' );

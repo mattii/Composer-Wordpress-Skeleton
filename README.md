@@ -5,7 +5,7 @@ This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](
 ## Short guide:
 1. Clone this git into your webroot in a folder called `site`:  
 `git clone git@github.com:mattii/Composer-Wordpress-Skeleton.git site`
-2. Edit `wp-config-local-sample.php` and enter valid db credentials, then rename to `wp-config-local.php`
+2. Edit `wp-config-development-sample.php` and enter valid db credentials, then rename to `wp-config-development.php`
 3. Change the Wordpress table prefix in `wp-config.php` (line 59)
 4. `composer install`
 5. Copy `index.php` and `.htaccess` from folder `site` to your webroot

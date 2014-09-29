@@ -5,9 +5,9 @@
 // ========================================================
 
 if( stristr( $_SERVER['SERVER_NAME'], "dev" ) ) {
-	$wp_env = "local";
+	$wp_env = "development";
 } else if( stristr( $_SERVER['SERVER_NAME'], "local" ) ) {
-	$wp_env = "local";
+	$wp_env = "development";
 } else if( stristr( $_SERVER['SERVER_NAME'], "staging" ) ) {
 	$wp_env = "staging";
 } else if( stristr( $_SERVER['SERVER_NAME'], "preview" ) ) {
