@@ -36,7 +36,7 @@ define( 'DB_COLLATE', '' );
 // ==============================================================
 // Salts, for security
 // Grab these from: https://api.wordpress.org/secret-key/1.1/salt
-// These are a fallback, re-define them in your environment wp-config.php's!
+// These are a fallback, re-define them in your wp-config.env.php's!
 // ==============================================================
 define('AUTH_KEY',         'HPr}_yFu((* w]Y-s*LAT1-KU5ITngu9@{a*a=-tLh`cP4OK90 6v?/:J^N.d*Am');
 define('SECURE_AUTH_KEY',  'r9]_#hShbfNg,(}!*>ghSQC0!; C)DF++e9=Ui$,,hm2|h$tt&uF!^wGwDUpAv-y');
