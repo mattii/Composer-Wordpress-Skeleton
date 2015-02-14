@@ -1,22 +1,17 @@
 <?php
 
 // ========================================================
-// Figure out environment and load wp-config-* accordingly.
+// Set number of post-revisions.	
 // ========================================================
 
-if( stristr( $_SERVER['SERVER_NAME'], "dev" ) ) {
-	$wp_env = "development";
-} else if( stristr( $_SERVER['SERVER_NAME'], "local" ) ) {
-	$wp_env = "development";
-} else if( stristr( $_SERVER['SERVER_NAME'], "staging" ) ) {
-	$wp_env = "staging";
-} else if( stristr( $_SERVER['SERVER_NAME'], "preview" ) ) {
-	$wp_env = "staging";
-} else {
-	$wp_env = "live";
-}
+define( 'WP_POST_REVISIONS', 10 );
 
-define( 'WP_SERVER_ENVIRONMENT', $wp_env );
+// ========================================================
+// SECURITY: disallow to edit plugins/themes in the
+// dashboard
+// ========================================================
+
+define( 'DISALLOW_FILE_EDIT', true );
 
 // =================================================
 // Define HOME and SITEURL
@@ -56,7 +51,7 @@ define('NONCE_SALT',       '842]Q`d4;$kzebwwy6=+d?k=2:Il-gyQVC!D[Lj2%{)*&dWx[az0
 // Table prefix
 // Change this if you have multiple installs in the same database
 // ==============================================================
-$table_prefix  = 'wp_';
+$table_prefix  = 'wp_klrk_';
 
 // ================================
 // Language
@@ -70,13 +65,11 @@ define( 'WPLANG', 'de_DE' );
 ini_set( 'display_errors', 0 );
 define( 'WP_DEBUG_DISPLAY', true );
 
-// ===================================================
-// Load database info and local development parameters
-// ===================================================
-if ( file_exists( dirname( __FILE__ ) . "/wp-config-$wp_env.php" ) ) {
-define( 'WP_LOCAL_DEV', true );
-include( dirname( __FILE__ ) . "/wp-config-$wp_env.php" );
-}
+// ================================================================================
+// Load environment dependant data (database info and local development parameters)
+// ================================================================================
+
+include( dirname( __FILE__ ) . "/wp-config.env.php" );
 
 // ======================================
 // Load a Memcached config if we have one

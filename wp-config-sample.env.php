@@ -20,4 +20,6 @@ define('NONCE_SALT',       '9t4V~Fi[A:lAq>K2OB61;(: 07<;Al.Et6EVH{+v]^7zL?R*d>`F
 define( 'SAVEQUERIES', false );
 define( 'WP_DEBUG', false );
 
+define( 'WP_SERVER_ENVIRONMENT', "development" );
+
 // global $wpdb; print_r($wpdb->queries);

@@ -1,7 +1,7 @@
 /vendor
 composer.lock
 .DS_Store
-/wp-config-development.php
+/wp-config.env.php
 /core
 site/plugins
 *.scssc
