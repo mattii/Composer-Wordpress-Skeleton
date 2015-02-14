@@ -3,7 +3,7 @@
 This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](https://github.com/moritzjacobs/Composer-Wordpress-Skeleton) and modified to my needs. Read the original README and use with caution.
 
 ## Short guide:
-1. Clone this git into your webroot in a folder called `site`:  
+1. Clone this git into your webroot in a folder called `site`: 
 `git clone git@github.com:mattii/Composer-Wordpress-Skeleton.git site`
 2. Edit `wp-config-development-sample.php` and enter valid db credentials, then rename to `wp-config-development.php`
 3. Change the Wordpress table prefix in `wp-config.php` (line 59)
@@ -27,9 +27,6 @@ This is simply a skeleton repo for a WordPress site, forked from [moritzjacobs](
     - core (Wordpress)
     - wp-config.php
     - …
-
-
-
 
 ### Differences to moritzjacobs's version:
 
